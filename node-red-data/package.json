@@ -1,0 +1,10 @@
+{
+  "name": "node-red-project",
+  "description": "A Node-RED Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "node-red-contrib-amqp": "~0.4.5",
+    "node-red-node-mongodb": "0.0.13",
+    "redis": "^2.6.5"
+  }
+}

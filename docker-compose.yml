@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+
+#############################################
+### NODERED SERVICE
+#############################################
+  my-iot-service:
+    image: my-iot-service:latest
+    build: .
+    environment:
+      - 'FLOWS=/data/myflows/flows.json'
+    volumes:
+     - ./node-red-data/myflows:/data/myflows
+    ports:
+      - '1880:1880'
+
+
+
+#############################################
+### rabbitmq SERVICE
+#############################################
+#  rabbitmq-service:
+#    image: rabbitmq:3-management
+#    ports:
+#      - '15672:15672'
+#############################################
+### mongo SERVICE
+#############################################
+#  mongodb-service:
+#    image: mongo
+#    ports:
+#      - '27017:27017'
+#
