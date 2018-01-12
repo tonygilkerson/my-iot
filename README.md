@@ -12,15 +12,21 @@ To stand up this service:
 
 * Clone this repo and navigate into the root of the project
 
-    $ git clone https://github.com/tonygilkerson/my-iot.git
-    $ cd my-IOT
+     $ git clone https://github.com/tonygilkerson/my-iot.git
+
+     $ cd my-IOT
+
 
 * Build then start
 
     $ docker-compose.exe build
+
     $ docker-compose.exe up
+
+    $ docker-compose.exe stop # when you are done
+
+
 
 * Use
 
     Point browser at: http://localhost:1880
-      
